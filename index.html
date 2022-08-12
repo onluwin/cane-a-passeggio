@@ -5,164 +5,221 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Cane a passeggio</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <h1>Un dog sitter</h1>
-        <ul class="header__list">
-          <li>
-            <a class="header__link" href="#passeggio">Cane a passeggio</a>
-          </li>
-          <li>
-            <a class="header__link" href="#visita">Visita dal veterinario</a>
-          </li>
-          <li><a class="header__link" href="#sitter">Un dog sitter</a></li>
-          <li><a class="header__link" href="#altri">Altri servizi</a></li>
-        </ul>
-        <a class="header__tel" href="tel:+393519297633">+393519297633</a>
+        <h1 class="header__title">Un dog sitter</h1>
+        <nav class="nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#passeggio">Cane a passeggio</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#visita">Visita dal veterinario</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#sitter">Un dog sitter</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#altri">Altri servizi</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__tel" href="tel:+393519297633"
+          ><svg class="header__tel-icon" width="25" height="25">
+            <use href="./images/icons.svg#icon-phone"></use></svg
+          >+393519297633</a
+        >
       </div>
     </header>
     <section class="passeggio" id="passeggio">
-      <div class="passeggio__box--left">
-        <p class="passeggio__text">
-          Sei impegnato al lavoro o in viaggio d'affari, sei malato o
-          semplicemente stanco e il tuo animale domestico ha bisogno di
-          passeggiate regolari?
-        </p>
-        <p class="passeggio__text--bottom">
-          Siamo pronti ad aiutare e prenderci cura del tuo animale domestico.
-        </p>
-        <button class="passeggio__btn" type="button">Servizio d'ordine</button>
+      <div class="container">
+        <div class="passeggio__box--left">
+          <p class="passeggio__text">
+            Sei impegnato al lavoro o in viaggio d'affari, sei malato o
+            semplicemente stanco e il tuo animale domestico ha bisogno di
+            passeggiate regolari?
+          </p>
+          <p class="passeggio__text--bottom">
+            Siamo pronti ad aiutare e prenderci cura del tuo animale domestico.
+          </p>
+          <button class="passeggio__btn btn" data-modal-open type="button">
+            Servizio d'ordine
+          </button>
+        </div>
+        <picture>
+          <source
+            srcset="./images/passeggio.jpg 1x, ./images/passeggio-2x.jpg 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/passeggio-tab.jpg    1x,
+              ./images/passeggio-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/passeggio-mob.jpg    1x,
+              ./images/passeggio-mob-2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            src="./images/passeggio.jpg"
+            class="passeggio__img"
+            alt="Cane a passeggio"
+            width="539"
+          />
+        </picture>
       </div>
-      <picture>
-        <source
-          srcset="./images/passeggio.jpg 1x, ./images/passeggio-2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/passeggio-tab.jpg    1x,
-            ./images/passeggio-tab-2x.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/passeggio-mob.jpg    1x,
-            ./images/passeggio-mob-2x.jpg 2x
-          "
-          media="(min-width: 320px)"
-        />
-        <img
-          src="./images/passeggio.jpg"
-          class="passeggio__img"
-          alt="Cane a passeggio"
-          width="641"
-          height="441"
-        />
-      </picture>
     </section>
     <section class="visita" id="visita">
-      <picture>
-        <source
-          srcset="./images/visita.jpg 1x, ./images/visita-2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="./images/visita-tab.jpg 1x, ./images/visita-tab-2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="./images/visita-mob.jpg 1x, ./images/visita-mob-2x.jpg 2x"
-          media="(min-width: 320px)"
-        />
-        <img
-          src="./images/visita.jpg"
-          class="visita__img"
-          alt="Visita dal veterinario"
-          width="430"
-          height="459"
-        />
-      </picture>
-      <h2 class="visita__title">Visita dal veterinario</h2>
-      <p class="visita__text">
-        Sei impegnato, ed è in questo giorno che devi andare dal veterinario.
-      </p>
-      <p class="visita__text--bottom">
-        Andiamo noi a portarlo a fare la visita dal tuo veterinario.
-      </p>
-      <button class="visita__btn" type="button">Servizio d'ordine</button>
+      <div class="container">
+        <picture>
+          <source
+            srcset="./images/visita.jpg 1x, ./images/visita-2x.jpg 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/visita-tab.jpg 1x, ./images/visita-tab-2x.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/visita-mob.jpg 1x, ./images/visita-mob-2x.jpg 2x"
+            media="(min-width: 320px)"
+          />
+          <img
+            src="./images/visita.jpg"
+            class="visita__img"
+            alt="Visita dal veterinario"
+            width="350"
+          />
+        </picture>
+        <div class="visita__box--right">
+          <h2 class="visita__title">Visita dal veterinario</h2>
+          <p class="visita__text">
+            Sei impegnato, ed è in questo giorno che devi andare dal
+            veterinario.
+          </p>
+          <p class="visita__text--bottom">
+            Andiamo noi a portarlo a fare la visita dal tuo veterinario.
+          </p>
+          <button class="visita__btn btn" data-modal-open type="button">
+            Servizio d'ordine
+          </button>
+        </div>
+      </div>
     </section>
     <section class="sitter" id="sitter">
-      <h2 class="sitter__title"></h2>
-      <p class="sitter__text">
-        Un dog sitter verrà a casa tua e conoscerà il tuo animale domestico.
-      </p>
-      <p class="sitter__text--bottom">
-        Se viene stabilito un contatto, la tata verrà da te all'ora stabilita.
-        Darà da mangiare al tuo cane, lo accompagnerà, ci giocherà molto. In un
-        momento conveniente per te, ti contatteremo per un reportage fotografico
-        e video.
-      </p>
-      <button class="sitter__btn" type="button">Servizio d'ordine</button>
-      <picture>
-        <source
-          srcset="./images/sitter.jpg 1x, ./images/sitter-2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="./images/sitter-tab.jpg 1x, ./images/sitter-tab-2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="./images/sitter-mob.jpg 1x, ./images/sitter-mob-2x.jpg 2x"
-          media="(min-width: 320px)"
-        />
-        <img
-          src="./images/sitter.jpg"
-          class="sitter__img"
-          alt="Un dog sitter"
-          width="696"
-          height="495"
-        />
-      </picture>
+      <div class="container">
+        <div class="sitter__box--right">
+          <h2 class="sitter__title">Un dog sitter</h2>
+          <p class="sitter__text">
+            Un dog sitter verrà a casa tua e conoscerà il tuo animale domestico.
+          </p>
+          <p class="sitter__text--bottom">
+            Se viene stabilito un contatto, la tata verrà da te all'ora
+            stabilita. Darà da mangiare al tuo cane, lo accompagnerà, ci
+            giocherà molto. In un momento conveniente per te, ti contatteremo
+            per un reportage fotografico e video.
+          </p>
+          <button class="sitter__btn btn" data-modal-open type="button">
+            Servizio d'ordine
+          </button>
+        </div>
+        <picture>
+          <source
+            srcset="./images/sitter.jpg 1x, ./images/sitter-2x.jpg 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/sitter-tab.jpg 1x, ./images/sitter-tab-2x.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/sitter-mob.jpg 1x, ./images/sitter-mob-2x.jpg 2x"
+            media="(min-width: 320px)"
+          />
+          <img
+            src="./images/sitter.jpg"
+            class="sitter__img"
+            alt="Un dog sitter"
+            width="480"
+          />
+        </picture>
+      </div>
     </section>
     <section class="altri" id="altri">
-      <h2 class="altri__title">Altri servizi</h2>
-      <p class="altri__text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi,
-        inventore?
-      </p>
-      <p class="altri__text--bottom">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cum
-        numquam hic, saepe voluptatibus, ex rem ad inventore excepturi ipsa
-        magnam dolore dolores at laborum eaque expedita tempore non, id veniam
-        vitae voluptatum placeat velit.
-      </p>
-      <button class="altri__img" type="button">Servizio d'ordine</button>
-      <picture>
-        <source
-          srcset="./images/sitter.jpg 1x, ./images/sitter-2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="./images/sitter-tab.jpg 1x, ./images/sitter-tab-2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="./images/sitter-mob.jpg 1x, ./images/sitter-mob-2x.jpg 2x"
-          media="(min-width: 320px)"
-        />
-        <img
-          src="./images/sitter.jpg"
-          class="aaltri__img"
-          alt="altri servizi"
-          width="696"
-          height="495"
-        />
-      </picture>
+      <div class="container">
+        <picture>
+          <source
+            srcset="./images/sitter.jpg 1x, ./images/sitter-2x.jpg 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/sitter-tab.jpg 1x, ./images/sitter-tab-2x.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/sitter-mob.jpg 1x, ./images/sitter-mob-2x.jpg 2x"
+            media="(min-width: 320px)"
+          />
+          <img
+            src="./images/sitter.jpg"
+            class="altri__img"
+            alt="altri servizi"
+            width="480"
+          />
+        </picture>
+        <div class="altri__box_right">
+          <h2 class="altri__title">Altri servizi</h2>
+          <p class="altri__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi,
+            inventore?
+          </p>
+          <p class="altri__text--bottom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cum
+            numquam hic, saepe voluptatibus, ex rem ad inventore excepturi ipsa
+            magnam dolore dolores at laborum eaque expedita tempore non, id
+            veniam vitae voluptatum placeat velit.
+          </p>
+          <button class="altri__btn btn" data-modal-open type="button">
+            Servizio d'ordine
+          </button>
+        </div>
+      </div>
     </section>
     <script src="./js/modal.js"></script>
   </body>

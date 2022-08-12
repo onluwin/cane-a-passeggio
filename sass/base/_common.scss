@@ -1,0 +1,29 @@
+.btn {
+    background-color: var(--accent-color);
+    color: var(--btn-text-color);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    width: 195px;
+    height: 45px;
+    border: none;
+    font-family: 'Comfortaa', cursive;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover, .btn:focus {
+    background-color: var(--btn-text-color);
+    color: var(--accent-color);
+    border: 2px solid transparent;
+    border-color: var(--accent-color);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.no-scroll {
+    overflow: hidden;
+}

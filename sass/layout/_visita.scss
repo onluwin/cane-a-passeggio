@@ -1,0 +1,40 @@
+.visita {
+    width: 100%;
+    margin-bottom: 170px;
+}
+.visita .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.visita__box--right {
+    margin-left: auto;
+}
+
+.visita__title {
+    margin-bottom: 50px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(58 / 48);
+    margin-top: 77px;
+}
+
+.visita__text {
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: calc(31 / 17);
+}
+
+.visita__text--bottom {
+    color: var(--accent-color);
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: calc(31 / 18);
+    font-family: 'Montserrat Alternates', sans-serif;
+}

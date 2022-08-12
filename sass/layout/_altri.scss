@@ -1,0 +1,36 @@
+.altri {
+    width: 100%;
+    margin-bottom: 115px;
+}
+.altri .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.altri__box_right {
+    width: 467px;
+    margin-left: auto;
+}
+
+.altri__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 58px;
+    margin-bottom: 50px;
+}
+
+.altri__text {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.8;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.altri__text--bottom {
+    margin-bottom: 50px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.8;
+}

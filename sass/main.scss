@@ -1,12 +1,15 @@
 @import "./utils/vars";
 
 @import "./base/reset";
+@import "./base/common";
 
 @import "./components/mixins";
 @import "./components/container";
+@import "./components/modal";
 
 @import "./layout/header";
 @import "./layout/passeggio";
 @import "./layout/visita";
 @import "./layout/sitter";
 @import "./layout/altri";
+

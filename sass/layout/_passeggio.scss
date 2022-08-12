@@ -1,0 +1,32 @@
+.passeggio {
+    width: 100%;
+    margin-bottom: 212px;
+}
+.passeggio .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.passeggio__box--left {
+    width: 424px;
+    margin-right: auto;
+    margin-top: 81px;
+}
+
+.passeggio__text {
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: calc(31 / 18);
+}
+
+.passeggio__text--bottom {
+    color: var(--accent-color);
+    margin-bottom: 80px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: calc(31 / 18);
+}
