@@ -38,7 +38,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <h1 class="header__title">Un dog sitter</h1>
+        <h1 class="header__title">Un dog sitter a Vercelli</h1>
         <nav class="nav">
           <ul class="header__list">
             <li class="header__item">
@@ -73,7 +73,7 @@
           <p class="passeggio__text--bottom">
             Siamo pronti ad aiutare e prenderci cura del tuo animale domestico.
           </p>
-          <button class="passeggio__btn btn" data-modal-open type="button">
+          <button class="passeggio__btn btn" type="button">
             Servizio d'ordine
           </button>
         </div>
@@ -136,7 +136,7 @@
           <p class="visita__text--bottom">
             Andiamo noi a portarlo a fare la visita dal tuo veterinario.
           </p>
-          <button class="visita__btn btn" data-modal-open type="button">
+          <button class="visita__btn btn" type="button">
             Servizio d'ordine
           </button>
         </div>
@@ -155,7 +155,7 @@
             giocherà molto. In un momento conveniente per te, ti contatteremo
             per un reportage fotografico e video.
           </p>
-          <button class="sitter__btn btn" data-modal-open type="button">
+          <button class="sitter__btn btn" type="button">
             Servizio d'ordine
           </button>
         </div>
@@ -221,6 +221,74 @@
         </div>
       </div>
     </section>
+
+    <!-- MODAL -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btnclose" data-modal-close type="button">
+          <svg class="modal__icon-close" width="15" height="15">
+            <use href="images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal__form" action="">
+          <div class="modal__input-container--left">
+            <label class="label__name" for="name"
+              >Nome<span class="label-span">*</span
+              ><input
+                class="modal__input-name"
+                name="nome"
+                required
+                type="name"
+                id="name"
+            /></label>
+            <label class="label__tel" for="tel"
+              >Numero di telefono<span class="label-span">*</span
+              ><input
+                class="modal__input-tel"
+                required
+                type="number"
+                name="numero di telefono"
+                id="tel"
+            /></label>
+            <label class="label__select" for="servizio">
+              Servizio<span class="label-span">*</span>
+              <select required class="select" name="servizio" id="servizio">
+                <option value="" disabled selected>Scegli un servizio</option>
+                <option value="Cane a passeggio">Cane a passeggio</option>
+                <option value="Visita dal veterinario">
+                  Visita dal veterinario
+                </option>
+                <option value="Un dog sitter">Un dog sitter</option>
+                <option value="Altri servizi">Altri servizi</option>
+              </select>
+            </label>
+            <p class="help">
+              <span class="label-span">*</span> - Сampo obbligatorio
+            </p>
+          </div>
+          <div class="modal__input-container--right">
+            <label class="label__textarea" for="comment"
+              >Un commento
+              <textarea
+                class="modal__textarea"
+                placeholder="Per favore scrivi esattamente cosa vorresti"
+                name="un commento"
+                id="comment"
+              ></textarea>
+            </label>
+            <label class="label__email" for="email"
+              >Email<input
+                class="modal__input-email"
+                type="email"
+                id="email"
+                name="email"
+            /></label>
+            <button class="modal__btnsubmit" type="submit">MANDARE</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
