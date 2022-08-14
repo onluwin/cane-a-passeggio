@@ -3,14 +3,25 @@
     margin-bottom: 212px;
 }
 .passeggio .container {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    @include desktop {
+        display: flex;
+            width: 1200px;
+            margin: 0 auto;
+    }
+    @include mobile {
+        width: 480px;
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
+
 .passeggio__box--left {
-    width: 424px;
-    margin-right: auto;
-    margin-top: 81px;
+    @include desktop {
+        width: 424px;
+        margin-right: auto;
+        margin-top: 81px;
+    }
 }
 
 .passeggio__text {
@@ -20,6 +31,10 @@
     font-weight: 500;
     font-size: 17px;
     line-height: calc(31 / 18);
+    @include mobile {
+        font-size: 16px;
+        line-height: calc(21 / 16);
+    }
 }
 
 .passeggio__text--bottom {
@@ -29,4 +44,20 @@
     font-weight: 500;
     font-size: 17px;
     line-height: calc(31 / 18);
+    @include mobile {
+        font-size: 16px;
+        line-height: calc(21 / 16);
+        margin-bottom: 15px;
+    }
+}
+.passeggio__btn {
+    @include mobile {
+        display: flex;
+        width: 140px;
+        height: 36px;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 11px;
+        line-height: calc(20px / 12px);
+    }
 }

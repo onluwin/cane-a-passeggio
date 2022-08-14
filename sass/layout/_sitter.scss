@@ -1,12 +1,13 @@
 .sitter {
     width: 100%;
-    margin-bottom: 203px;
+    margin-bottom: 94px;
 }
 .sitter .container {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    margin-right: 15px;
+    @include desktop {
+        display: flex;
+            width: 1200px;
+            margin: 0 auto;
+    }
 }
 
 .sitter__box--right {
@@ -19,6 +20,7 @@
     font-weight: 500;
     font-size: 40px;
     line-height: calc(58 / 48);
+    color: var(--title-color);
 }
 
 .sitter__text {

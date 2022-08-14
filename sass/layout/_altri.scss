@@ -1,37 +1,53 @@
 .altri {
     width: 100%;
-    margin-bottom: 115px;
+    margin-bottom: 70px;
 }
 .altri .container {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    @include desktop {
+        width: 1200px;
+            margin: 0 auto;
+    }
 }
-.altri__box_right {
-    width: 467px;
-    margin-left: auto;
+.altri__box--left {
+    width: 483px;
+    padding: 51px 25px;
+    border: 2px solid var(--accent-color);
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 20px;
+    line-height: calc(36px / 24px);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.altri__box--left:hover, .altri__box--left:focus {
+    background-color: var(--accent-color);
+    color: var(--btn-text-color);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.altri__box--right {
+    width: 483px;
+    padding: 51px 25px;
+    border: 2px solid var(--accent-color);
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 20px;
+    line-height: calc(36px / 24px);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.altri__box--right:hover, .altri__box--right:focus  {
+    background-color: var(--accent-color);
+    color: var(--btn-text-color);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .altri__title {
     font-weight: 500;
-    font-size: 40px;
-    line-height: 58px;
-    margin-bottom: 50px;
+    font-size: 38px;
+    line-height: calc(48px / 38px);
+    margin-bottom: 48px;
+    color: var(--title-color);
+    display: flex;
+    justify-content: center;
 }
-
-.altri__text {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 1.8;
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.altri__text--bottom {
-    margin-bottom: 50px;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 1.8;
-    color: var(--accent-color);
+.altri__box-wrap {
+    display: flex;
+    justify-content: center;
+    height: 238px;
+    gap: 20px;
 }

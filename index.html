@@ -36,7 +36,7 @@
     <title>Cane a passeggio</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <h1 class="header__title">Un dog sitter a Vercelli</h1>
         <nav class="nav">
@@ -60,9 +60,45 @@
             <use href="./images/icons.svg#icon-phone"></use></svg
           >+393519297633</a
         >
+        <button
+          class="mob-menu__btn"
+          aria-controls="menu-container"
+          data-menu-button
+          type="button"
+        >
+          <svg class="mob-menu__icon" width="24" height="24">
+            <use
+              class="mob-menu__icon--open"
+              href="./images/icons.svg#icon-mob-menu--open"
+            ></use>
+            <use
+              class="mob-menu__icon--close"
+              href="./images/icons.svg#icon-mob-menu--close"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- MOB-MENU -->
+
+      <div class="mob-menu" id="menu-container" data-menu data-menu-open>
+        <ul class="mob-menu__list">
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#passeggio">Cane A Passeggio </a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#visita">Visita dal veterinario</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#sitter">Un dog sitter</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#altri">Altri servizi</a>
+          </li>
+        </ul>
       </div>
     </header>
-    <section class="passeggio" id="passeggio">
+    <!-- <section class="passeggio" id="passeggio">
       <div class="container">
         <div class="passeggio__box--left">
           <p class="passeggio__text">
@@ -104,8 +140,8 @@
           />
         </picture>
       </div>
-    </section>
-    <section class="visita" id="visita">
+    </section> -->
+    <!-- <section class="visita" id="visita">
       <div class="container">
         <picture>
           <source
@@ -141,8 +177,8 @@
           </button>
         </div>
       </div>
-    </section>
-    <section class="sitter" id="sitter">
+    </section> -->
+    <!-- <section class="sitter" id="sitter">
       <div class="container">
         <div class="sitter__box--right">
           <h2 class="sitter__title">Un dog sitter</h2>
@@ -155,7 +191,7 @@
             giocherà molto. In un momento conveniente per te, ti contatteremo
             per un reportage fotografico e video.
           </p>
-          <button class="sitter__btn btn" type="button">
+          <button class="sitter__btn btn" type="button" data-modal-open>
             Servizio d'ordine
           </button>
         </div>
@@ -180,47 +216,42 @@
           />
         </picture>
       </div>
-    </section>
-    <section class="altri" id="altri">
+    </section> -->
+    <!-- <section class="altri" id="altri">
       <div class="container">
-        <picture>
-          <source
-            srcset="./images/sitter.jpg 1x, ./images/sitter-2x.jpg 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./images/sitter-tab.jpg 1x, ./images/sitter-tab-2x.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="./images/sitter-mob.jpg 1x, ./images/sitter-mob-2x.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./images/sitter.jpg"
-            class="altri__img"
-            alt="altri servizi"
-            width="480"
-          />
-        </picture>
-        <div class="altri__box_right">
-          <h2 class="altri__title">Altri servizi</h2>
-          <p class="altri__text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi,
-            inventore?
-          </p>
-          <p class="altri__text--bottom">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cum
-            numquam hic, saepe voluptatibus, ex rem ad inventore excepturi ipsa
-            magnam dolore dolores at laborum eaque expedita tempore non, id
-            veniam vitae voluptatum placeat velit.
-          </p>
-          <button class="altri__btn btn" data-modal-open type="button">
-            Servizio d'ordine
-          </button>
+        <h2 class="altri__title">Altri servizi</h2>
+        <div class="altri__box-wrap">
+          <div class="altri__box--left">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              voluptatibus incidunt sapiente eaque veniam?
+            </p>
+          </div>
+          <div class="altri__box--right">
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              voluptatibus incidunt sapiente eaque veniam?
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </section> -->
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="footer__list-wrap">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#header">Un dog sitter a Vercelli</a>
+            </li>
+            <li class="footer__item">Home</li>
+            <li class="footer__item"><a href="">Politica per la Privacy</a></li>
+            <li class="footer__item">2022</li>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
 
     <!-- MODAL -->
 
@@ -231,6 +262,7 @@
             <use href="images/icons.svg#icon-cross"></use>
           </svg>
         </button>
+        <h2 class="modal__title">Servizio d'ordine</h2>
         <form class="modal__form" action="">
           <div class="modal__input-container--left">
             <label class="label__name" for="name"
@@ -247,12 +279,12 @@
               ><input
                 class="modal__input-tel"
                 required
-                type="number"
+                type="tel"
                 name="numero di telefono"
                 id="tel"
             /></label>
             <label class="label__select" for="servizio">
-              Servizio<span class="label-span">*</span>
+              Tipologia di servizio<span class="label-span">*</span>
               <select required class="select" name="servizio" id="servizio">
                 <option value="" disabled selected>Scegli un servizio</option>
                 <option value="Cane a passeggio">Cane a passeggio</option>
@@ -289,6 +321,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
