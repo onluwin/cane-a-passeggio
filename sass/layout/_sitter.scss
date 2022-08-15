@@ -1,18 +1,39 @@
 .sitter {
     width: 100%;
-    margin-bottom: 94px;
+    margin-bottom: 70px;
+    @include mobile {
+        margin-bottom: 40px;
+    }
 }
 .sitter .container {
     @include desktop {
         display: flex;
             width: 1200px;
             margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+    }
+    @include mobile {
+        max-width: 375px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
 .sitter__box--right {
-    width: 467px;
-    margin-right: auto;
+    @include desktop {
+        width: 467px;
+        margin-right: auto;
+    }
+}
+
+.sitter__img {
+    @include mobile {
+        width: 308px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 }
 
 .sitter__title {
@@ -21,6 +42,13 @@
     font-size: 40px;
     line-height: calc(58 / 48);
     color: var(--title-color);
+    @include mobile {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
 
 .sitter__text {
@@ -29,7 +57,7 @@
     line-height: calc(31 / 18);
     margin-bottom: 10px;
     font-family: 'Montserrat Alternates', sans-serif;
-    color: var(--primary-text-color);
+    color: var(--accent-color);
 }
 
 .sitter__text--bottom {
@@ -37,6 +65,9 @@
     font-size: 17px;
     line-height: calc(31 / 18);
     font-family: 'Montserrat Alternates', sans-serif;
-    color: var(--accent-color);
+    color: var(--primary-text-color);
     margin-bottom: 50px;
+    @include mobile {
+        margin-bottom: 15px;
+    }
 }

@@ -1,11 +1,22 @@
 .altri {
     width: 100%;
     margin-bottom: 70px;
+    @include mobile {
+        margin-bottom: 30px;
+    }
 }
 .altri .container {
     @include desktop {
         width: 1200px;
-            margin: 0 auto;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @include mobile {
+        max-width: 375px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 .altri__box--left {
@@ -16,11 +27,19 @@
     font-size: 20px;
     line-height: calc(36px / 24px);
     transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include mobile {
+        padding: 23px 21px;
+    }
 }
 .altri__box--left:hover, .altri__box--left:focus {
     background-color: var(--accent-color);
     color: var(--btn-text-color);
     transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.altri__box--left:hover .altri__text,
+.altri__box--left:focus .altri__text {
+    color: var(--btn-text-color);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .altri__box--right {
     width: 483px;
@@ -30,11 +49,19 @@
     font-size: 20px;
     line-height: calc(36px / 24px);
     transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include mobile {
+            padding: 23px 21px;
+        }
 }
 .altri__box--right:hover, .altri__box--right:focus  {
     background-color: var(--accent-color);
     color: var(--btn-text-color);
     transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.altri__box--right:hover .altri__text,
+.altri__box--right:focus .altri__text {
+    color: var(--btn-text-color);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .altri__title {
     font-weight: 500;
@@ -44,10 +71,40 @@
     color: var(--title-color);
     display: flex;
     justify-content: center;
+    @include mobile {
+        margin-bottom: 15px;
+    }
 }
 .altri__box-wrap {
     display: flex;
     justify-content: center;
-    height: 238px;
     gap: 20px;
+    @include desktop {
+        height: 238px;
+    }
+    @include mobile {
+        flex-wrap: wrap;
+    }
+}
+.altri__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Montserrat Alternates", sans-serif;
+    @include mobile {
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--accent-color);
+    }
+}
+
+.altri__text-bottom {
+    font-weight: 500;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 19px;
+    line-height: 1.5;
+    @include mobile {
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }

@@ -2,8 +2,14 @@
     width: 100%;
     background-color: #F7F8FD;
     position: relative;
+    @include mobile {
+        height: 145px;
+    }
     &__list-wrap {
         padding: 63px 0;
+        @include mobile {
+            display: none;
+        }
     }
     &__list {
         display: flex;
@@ -36,4 +42,76 @@
         width: 1200px;
         margin: 0 auto;
     }
+    @include mobile {
+        max-width: 375px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+// ---------------------------MOBILE-FOOTER-----------------------
+
+.mobile-footer {
+    @include desktop {
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }
+}
+
+.mobile-footer__title {
+    font-family: 'Otomanopee One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.29;
+        display: flex;
+        color: #ADACB1;
+        margin-top: 6px;
+        width: 112px;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+}
+
+.mobile-footer__tel {
+    @include desktop {
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }
+    font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 1.5;
+        color: rgba(24, 61, 96, 0.69);
+        display: flex;
+        width: 161px;
+        margin: 0 auto;
+        align-items: center;
+        margin-bottom: 10px;
+}
+
+.mobile-footer__tel-icon {
+    fill: rgba(24, 61, 96, 0.69);
+    margin-right: 10px;
+    display: inline-flex;
+}
+
+.mobile-footer__list {
+    display: flex;
+    justify-content: center;
+    gap: 57px;
+}
+
+.mobile-footer__item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ADACB1;
+    text-align: center;
 }

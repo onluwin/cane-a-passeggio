@@ -57,7 +57,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  font-family: "Comfortaa", cursive;
+  font-family: "Otomanopee One";
 }
 
 input, textarea {
@@ -78,6 +78,24 @@ input, textarea {
   font-family: "Oswald", sans-serif;
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn {
+    width: 140px;
+    height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.6666666667;
+  }
 }
 
 .btn:hover, .btn:focus {
@@ -662,16 +680,17 @@ input, textarea {
 
 .passeggio {
   width: 100%;
-  margin-bottom: 212px;
 }
 @media screen and (min-width: 1200px) {
   .passeggio {
     padding-top: 199px;
+    margin-bottom: 212px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .passeggio {
     padding-top: 78px;
+    margin-bottom: 40px;
   }
 }
 
@@ -720,6 +739,7 @@ input, textarea {
   .passeggio__text {
     font-size: 16px;
     line-height: 1.3125;
+    margin-bottom: 10px;
   }
 }
 
@@ -741,27 +761,30 @@ input, textarea {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .passeggio__btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 140px;
     height: 36px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 auto;
-    font-size: 12px;
-    line-height: 1.6666666667;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .passeggio__img {
+    margin-bottom: 15px;
   }
 }
 
 .visita {
   width: 100%;
-  margin-bottom: 170px;
+}
+@media screen and (min-width: 1200px) {
+  .visita {
+    margin-bottom: 170px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .visita {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -773,6 +796,22 @@ input, textarea {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .visita .container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .visita__img {
+    max-width: 238px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
 
 .visita__box--right {
   margin-left: auto;
@@ -781,10 +820,28 @@ input, textarea {
 .visita__title {
   margin-bottom: 50px;
   color: var(--title-color);
-  font-weight: 500;
   font-size: 40px;
   line-height: 1.2083333333;
-  margin-top: 77px;
+}
+@media screen and (min-width: 1200px) {
+  .visita__title {
+    margin-top: 77px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .visita__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: "Otomanopee One";
+    font-weight: 400;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .visita__text {
@@ -804,10 +861,20 @@ input, textarea {
   line-height: 1.7222222222;
   font-family: "Montserrat Alternates", sans-serif;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .visita__text--bottom {
+    margin-bottom: 15px;
+  }
+}
 
 .sitter {
   width: 100%;
-  margin-bottom: 94px;
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .sitter {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -817,12 +884,32 @@ input, textarea {
     display: flex;
     width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .sitter .container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
-.sitter__box--right {
-  width: 467px;
-  margin-right: auto;
+@media screen and (min-width: 1200px) {
+  .sitter__box--right {
+    width: 467px;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .sitter__img {
+    width: 308px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 .sitter__title {
@@ -832,6 +919,15 @@ input, textarea {
   line-height: 1.2083333333;
   color: var(--title-color);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .sitter__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
 
 .sitter__text {
   font-weight: 500;
@@ -839,7 +935,7 @@ input, textarea {
   line-height: 1.7222222222;
   margin-bottom: 10px;
   font-family: "Montserrat Alternates", sans-serif;
-  color: var(--primary-text-color);
+  color: var(--accent-color);
 }
 
 .sitter__text--bottom {
@@ -847,19 +943,39 @@ input, textarea {
   font-size: 17px;
   line-height: 1.7222222222;
   font-family: "Montserrat Alternates", sans-serif;
-  color: var(--accent-color);
+  color: var(--primary-text-color);
   margin-bottom: 50px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .sitter__text--bottom {
+    margin-bottom: 15px;
+  }
 }
 
 .altri {
   width: 100%;
   margin-bottom: 70px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .altri {
+    margin-bottom: 30px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .altri .container {
     width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .altri .container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -873,12 +989,24 @@ input, textarea {
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .altri__box--left {
+    padding: 23px 21px;
+  }
+}
 
 .altri__box--left:hover, .altri__box--left:focus {
   background-color: var(--accent-color);
   color: var(--btn-text-color);
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.altri__box--left:hover .altri__text,
+.altri__box--left:focus .altri__text {
+  color: var(--btn-text-color);
+  -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .altri__box--right {
@@ -891,12 +1019,24 @@ input, textarea {
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .altri__box--right {
+    padding: 23px 21px;
+  }
+}
 
 .altri__box--right:hover, .altri__box--right:focus {
   background-color: var(--accent-color);
   color: var(--btn-text-color);
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.altri__box--right:hover .altri__text,
+.altri__box--right:focus .altri__text {
+  color: var(--btn-text-color);
+  -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .altri__title {
@@ -912,6 +1052,11 @@ input, textarea {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .altri__title {
+    margin-bottom: 15px;
+  }
+}
 
 .altri__box-wrap {
   display: -webkit-box;
@@ -920,8 +1065,45 @@ input, textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 238px;
   gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .altri__box-wrap {
+    height: 238px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .altri__box-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.altri__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .altri__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--accent-color);
+  }
+}
+
+.altri__text-bottom {
+  font-weight: 500;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 19px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .altri__text-bottom {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 .footer {
@@ -929,8 +1111,18 @@ input, textarea {
   background-color: #F7F8FD;
   position: relative;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    height: 145px;
+  }
+}
 .footer__list-wrap {
   padding: 63px 0;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer__list-wrap {
+    display: none;
+  }
 }
 .footer__list {
   display: -webkit-box;
@@ -971,4 +1163,96 @@ input, textarea {
     width: 1200px;
     margin: 0 auto;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer .container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mobile-footer {
+    display: none;
+  }
+}
+
+.mobile-footer__title {
+  font-family: "Otomanopee One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ADACB1;
+  margin-top: 6px;
+  width: 112px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.mobile-footer__tel {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.5;
+  color: rgba(24, 61, 96, 0.69);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 161px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .mobile-footer__tel {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mobile-footer__tel {
+    display: none;
+  }
+}
+
+.mobile-footer__tel-icon {
+  fill: rgba(24, 61, 96, 0.69);
+  margin-right: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.mobile-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 57px;
+}
+
+.mobile-footer__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ADACB1;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

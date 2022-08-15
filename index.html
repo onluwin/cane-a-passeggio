@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -26,6 +26,8 @@
       href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -35,10 +37,6 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <title>Cane a passeggio</title>
   </head>
   <body>
@@ -148,7 +146,7 @@
       </div>
     </section>
     <section class="visita" id="visita">
-      <!-- <div class="container">
+      <div class="container">
         <picture>
           <source
             srcset="./images/visita.jpg 1x, ./images/visita-2x.jpg 2x"
@@ -178,13 +176,13 @@
           <p class="visita__text--bottom">
             Andiamo noi a portarlo a fare la visita dal tuo veterinario.
           </p>
-          <button class="visita__btn btn" type="button" data-modal-open>
+          <button class="visita__btn btn" type="button" data-modal-open-2>
             Servizio d'ordine
           </button>
         </div>
       </div>
-    </section> -->
-    <!-- <section class="sitter" id="sitter">
+    </section>
+    <section class="sitter" id="sitter">
       <div class="container">
         <div class="sitter__box--right">
           <h2 class="sitter__title">Un dog sitter</h2>
@@ -197,7 +195,7 @@
             giocherà molto. In un momento conveniente per te, ti contatteremo
             per un reportage fotografico e video.
           </p>
-          <button class="sitter__btn btn" type="button" data-modal-open>
+          <button class="sitter__btn btn" type="button" data-modal-open-3>
             Servizio d'ordine
           </button>
         </div>
@@ -218,33 +216,32 @@
             src="./images/sitter.jpg"
             class="sitter__img"
             alt="Un dog sitter"
-            width="480"
           />
         </picture>
       </div>
-    </section> -->
-    <!-- <section class="altri" id="altri">
+    </section>
+    <section class="altri" id="altri">
       <div class="container">
         <h2 class="altri__title">Altri servizi</h2>
         <div class="altri__box-wrap">
           <div class="altri__box--left">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>
+            <p class="altri__text">Lorem ipsum dolor sit.</p>
+            <p class="altri__text-bottom">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
               voluptatibus incidunt sapiente eaque veniam?
             </p>
           </div>
           <div class="altri__box--right">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>
+            <p class="altri__text">Lorem ipsum dolor sit.</p>
+            <p class="altri__text-bottom">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
               voluptatibus incidunt sapiente eaque veniam?
             </p>
           </div>
         </div>
       </div>
-    </section> -->
-    <!-- <footer class="footer">
+    </section>
+    <footer class="footer">
       <div class="container">
         <div class="footer__list-wrap">
           <ul class="footer__list">
@@ -256,8 +253,21 @@
             <li class="footer__item">2022</li>
           </ul>
         </div>
+        <div class="mobile-footer">
+          <h3 class="mobile-footer__title">Un dog sitter a Vercelli</h3>
+          <a class="mobile-footer__tel" href="tel:+393519297633"
+            ><svg class="mobile-footer__tel-icon" width="19" height="19">
+              <use href="./images/icons.svg#icon-foot-tel"></use></svg
+            >+393519297633</a
+          >
+          <ul class="mobile-footer__list">
+            <li class="mobile-footer__item">Home</li>
+            <li class="mobile-footer__item">Politica per la Privacy</li>
+            <li class="mobile-footer__item">2022</li>
+          </ul>
+        </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- MODAL -->
 

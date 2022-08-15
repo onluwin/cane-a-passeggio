@@ -1,9 +1,11 @@
 .visita {
     width: 100%;
-    margin-bottom: 170px;
-
-
-
+    @include desktop {
+        margin-bottom: 170px;
+    }
+    @include mobile {
+        margin-bottom: 40px;
+    }
 }
 .visita .container {
     @include desktop {
@@ -11,24 +13,40 @@
             width: 1200px;
             margin: 0 auto;
     }
-
-   
+    @include mobile {
+        max-width: 375px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
-
+.visita__img {
+    @include mobile {
+        max-width: 238px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
 .visita__box--right {
     margin-left: auto;
-
 }
-
-
-
 .visita__title {
     margin-bottom: 50px;
     color: var(--title-color);
-    font-weight: 500;
     font-size: 40px;
     line-height: calc(58 / 48);
-    margin-top: 77px;
+    @include desktop {
+        margin-top: 77px;
+    }
+    @include mobile {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: calc(24 / 20);
+        font-family: 'Otomanopee One';
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .visita__text {
@@ -47,4 +65,7 @@
     font-size: 17px;
     line-height: calc(31 / 18);
     font-family: 'Montserrat Alternates', sans-serif;
+    @include mobile {
+        margin-bottom: 15px;
+    }
 }

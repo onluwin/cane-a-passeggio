@@ -1,9 +1,9 @@
 @import "./utils/vars";
+@import "./components/mixins";
 
 @import "./base/reset";
 @import "./base/common";
 
-@import "./components/mixins";
 @import "./components/container";
 @import "./components/modal";
 

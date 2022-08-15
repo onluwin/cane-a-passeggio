@@ -1,11 +1,12 @@
 .passeggio {
     width: 100%;
-    margin-bottom: 212px;
     @include desktop {
         padding-top: calc(74px + 125px);
+        margin-bottom: 212px;
     } 
     @include mobile {
         padding-top: 78px;
+        margin-bottom: 40px;
     }
 }
 .passeggio .container {
@@ -43,6 +44,7 @@
     @include mobile {
         font-size: 16px;
         line-height: calc(21 / 16);
+        margin-bottom: 10px;
     }
 }
 
@@ -61,14 +63,13 @@
 }
 .passeggio__btn {
     @include mobile {
-        display: flex;
         width: 140px;
         height: 36px;
-        align-items: center;
-        margin: 0 auto;
-        font-size: 12px;
-        line-height: calc(20px / 12px);
-        justify-content: center;
         font-weight: 400;
+    }
+}
+.passeggio__img {
+    @include mobile {
+        margin-bottom: 15px;
     }
 }
