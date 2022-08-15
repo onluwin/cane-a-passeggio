@@ -1,12 +1,18 @@
 .header {
     display: flex;
     margin-bottom: 74px;
-    height: 144px;
-    background-color: #F5F5F5;
+    height: 125px;
+    background: rgba(247, 248, 253, 0.7);
     width: 100%;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(20px);
     @include mobile {
         height: 72px;
         position: relative;
+        margin-bottom: 8px;
+        position: fixed;
+            backdrop-filter: blur(20px);
     }
 }
 .header .container {
@@ -35,7 +41,6 @@
         font-size: 20px;
         line-height: calc(26 / 20);
         width: 157px;
-        padding-top: 10px;
         margin-right: auto;
     }
     @include desktop {
@@ -121,6 +126,7 @@
     border: none;
     background-color: transparent;
     z-index: 3;
+    
     @include desktop {
         display: none;
     }
@@ -201,8 +207,9 @@
     font-size: 16px;
     line-height: calc(22 / 16);
     color: var(--title-color);
-    font-family: 'Comfortaa', cursive;
-    font-weight: 700;
+    font-family: 'Otomanopee One';
+    font-style: normal;
+    font-weight: 400;
 }
 
 .mob-menu__link {}

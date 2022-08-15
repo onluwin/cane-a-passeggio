@@ -2,11 +2,24 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+font-family: 'Otomanopee One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/OtomanopeeOne-Regular.ttf);
+
+
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Otomanopee One';
+    font-style: normal;
+        font-weight: 400;
+    // font-family: 'Montserrat Alternates', sans-serif;
     color: var(--primary-text-color);
+    
 }
 
 button {

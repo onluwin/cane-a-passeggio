@@ -1,6 +1,9 @@
 .visita {
     width: 100%;
     margin-bottom: 170px;
+
+
+
 }
 .visita .container {
     @include desktop {
@@ -8,11 +11,16 @@
             width: 1200px;
             margin: 0 auto;
     }
+
+   
 }
 
 .visita__box--right {
     margin-left: auto;
+
 }
+
+
 
 .visita__title {
     margin-bottom: 50px;
