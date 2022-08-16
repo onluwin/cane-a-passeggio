@@ -18,8 +18,10 @@
 .header .container {
     @include desktop {
         display: flex;
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
     }
     @include mobile {
         display: flex;
@@ -60,6 +62,7 @@
 .header__list {
     display: flex;
     align-items: center;
+    margin-right: 41px;
 }
 
 .header__item {

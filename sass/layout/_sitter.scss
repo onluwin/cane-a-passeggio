@@ -8,7 +8,7 @@
 .sitter .container {
     @include desktop {
         display: flex;
-            width: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
             padding-left: 15px;
             padding-right: 15px;
@@ -20,6 +20,8 @@
         padding-right: 15px;
     }
 }
+
+
 
 .sitter__box--right {
     @include desktop {
@@ -33,6 +35,9 @@
         width: 308px;
         margin: 0 auto;
         margin-bottom: 20px;
+    }
+    @include desktop {
+        width: 539px;
     }
 }
 
