@@ -19,17 +19,17 @@
 
 // (() => {
 //   const refs = {
-//     openModalBtn: document.querySelector("[data-modal-open-3]"),
-//     closeModalBtn: document.querySelector("[data-modal-close-3]"),
-//       modal: document.querySelector("[data-modal]"),
+//     openRequestBtn: document.querySelector("[data-request-open]"),
+//     closeRequestBtn: document.querySelector("[data-request-close]"),
+//       request: document.querySelector("[data-request]"),
 //     body: document.querySelector("body"),
 //   };
 
-//   refs.openModalBtn.addEventListener("click", toggleModal);
-//   refs.closeModalBtn.addEventListener("click", toggleModal);
+//   refs.openRequestBtn.addEventListener("click", toggleRequest);
+//   refs.closeRequestBtn.addEventListener("click", toggleRequest);
 
-//   function toggleModal() {
-//       refs.modal.classList.toggle("is-hidden");
+//   function toggleRequest() {
+//       refs.request.classList.toggle("is-hidden");
 //       refs.body.classList.toggle("no-scroll");
 //   }
 // })();

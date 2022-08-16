@@ -329,14 +329,47 @@
                 id="email"
                 name="email"
             /></label>
-            <button class="modal__btnsubmit" type="submit">MANDARE</button>
+            <button class="modal__btnsubmit" type="submit" data-request-open>
+              MANDARE
+            </button>
           </div>
         </form>
+      </div>
+    </div>
+    <div class="request is-hidden" data-request>
+      <div class="request__container">
+        <button class="request__btnclose" data-request-close type="button">
+          <svg class="request__icon-close" width="15" height="15">
+            <use href="images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <h2 class="request__title">Request has been sent!</h2>
+        <p class="request__text">We will call you back soon.</p>
+        <picture>
+          <source
+            srcset="./images/request.jpg 1x, ./images/request-2x.jpg 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/request.jpg 1x, ./images/request-2x.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/request-mob.jpg 1x, ./images/request-mob-2x.jpg 2x"
+            media="(min-width: 320px)"
+          />
+          <img
+            src="./images/request.jpg"
+            class="request__img"
+            alt="request has been sent"
+          />
+        </picture>
       </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/modal2.js"></script>
     <script src="./js/modal3.js"></script>
+    <script src="./js/request.js"></script>
   </body>
 </html>

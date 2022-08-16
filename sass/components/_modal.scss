@@ -22,6 +22,11 @@
     transform: translate(-50%, -50%);
     padding: 40px;
     transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include mobile {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+    }
     &__title {
         display: flex;
         justify-content: center;
@@ -29,6 +34,12 @@
         line-height: calc(46px / 38px);
         margin-bottom: 18px;
         color: var(--title-color);
+        @include mobile {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.2;
+            margin-top: 45px;
+        }
     }
 }
 
@@ -60,16 +71,25 @@
 }
 .modal__form {
     display: flex;
+    @include mobile {
+        flex-wrap: wrap;
+        width: 270px;
+        margin: 0 auto;
+    }
 }
 
 .modal__input-container--left {
-    padding: 20px;
     width: 302px;
+    @include desktop {
+        padding: 20px;
+    }
 }
 
 .modal__input-container--right {
     width: 302px;
-    padding: 20px;
+    @include desktop {
+            padding: 20px;
+        }
 }
 
 .label__name {
@@ -86,6 +106,10 @@
     padding: 15px;
     transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #ADACB1;
+    @include mobile {
+        width: 270px;
+        margin-bottom: 20px;
+    }
 }
 .modal__input-name:focus {
     border: 1px solid var(--accent-color);
@@ -98,11 +122,15 @@
 
 .modal__input-tel {
     height: 40px;
-    margin-bottom: 40px;
     width: 100%;
+    margin-bottom: 40px;
     padding: 15px;
     transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #ADACB1;
+    @include mobile {
+            width: 270px;
+            margin-bottom: 20px;
+        }
 }
 .modal__input-tel:focus {
     border: 1px solid var(--accent-color);
@@ -111,7 +139,6 @@
     border: 1px solid #F50000;
 }
 .label__select {
-    
 }
 
 .select {
@@ -119,18 +146,26 @@
     height: 40px;
     outline: none;
     border: 1px solid #ADACB1;
+    margin-bottom: 20px;
 }
 
 .help {
     position: absolute;
     bottom: 70px;
     font-size: 14px;
+    @include mobile {
+        display: none;
+    }
 }
 
 .label__textarea {
     display: flex;
     margin-bottom: 41px;
     flex-wrap: wrap;
+    @include mobile {
+        width: 270px;
+        margin-bottom: 20px;
+    }
 }
 
 .modal__textarea {
@@ -140,6 +175,9 @@
     padding: 15px;
     transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #ADACB1;
+    @include mobile {
+        height: 71px;
+    }
 }
 .modal__textarea:focus::placeholder {
     color: transparent
@@ -154,10 +192,14 @@
 .modal__input-email {
     height: 40px;
     width: 100%;
+    margin-bottom: 37px;
     padding: 15px;
-    margin-bottom: 40px;
     transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #ADACB1;
+    @include mobile {
+            width: 270px;
+            margin-bottom: 30px;
+        }
 }
 .modal__input-email:focus {
     border: 1px solid var(--accent-color);
@@ -189,4 +231,65 @@
     border: 2px solid transparent;
     border-color: var(--accent-color);
     transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// ---------------------------REQUEST--------------------------
+
+.request {
+    // display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.request__container {
+    @include mobile {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+    @include desktop {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.request__btnclose {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 24px;
+    right: 20px;
+}
+
+.request__icon-close {
+}
+
+.request__title {
+    font-family: 'Otomanopee One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        color: var(--title-color);
+        justify-content: center;
+        margin-top: 120px;
+        margin-bottom: 12px;
+}
+
+.request__text {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.request__img {
+    width: 335px;
+    margin: 0 auto;
 }

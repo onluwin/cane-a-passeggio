@@ -168,6 +168,13 @@ input, textarea {
   -webkit-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+  }
+}
 .modal__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,6 +186,14 @@ input, textarea {
   line-height: 1.2105263158;
   margin-bottom: 18px;
   color: var(--title-color);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 45px;
+  }
 }
 
 .modal__btnclose {
@@ -220,15 +235,31 @@ input, textarea {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal__form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 270px;
+    margin: 0 auto;
+  }
+}
 
 .modal__input-container--left {
-  padding: 20px;
   width: 302px;
+}
+@media screen and (min-width: 768px) {
+  .modal__input-container--left {
+    padding: 20px;
+  }
 }
 
 .modal__input-container--right {
   width: 302px;
-  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .modal__input-container--right {
+    padding: 20px;
+  }
 }
 
 .label-span {
@@ -245,6 +276,12 @@ input, textarea {
   transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #ADACB1;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal__input-name {
+    width: 270px;
+    margin-bottom: 20px;
+  }
+}
 
 .modal__input-name:focus {
   border: 1px solid var(--accent-color);
@@ -256,12 +293,18 @@ input, textarea {
 
 .modal__input-tel {
   height: 40px;
-  margin-bottom: 40px;
   width: 100%;
+  margin-bottom: 40px;
   padding: 15px;
   -webkit-transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #ADACB1;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal__input-tel {
+    width: 270px;
+    margin-bottom: 20px;
+  }
 }
 
 .modal__input-tel:focus {
@@ -277,12 +320,18 @@ input, textarea {
   height: 40px;
   outline: none;
   border: 1px solid #ADACB1;
+  margin-bottom: 20px;
 }
 
 .help {
   position: absolute;
   bottom: 70px;
   font-size: 14px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .help {
+    display: none;
+  }
 }
 
 .label__textarea {
@@ -293,6 +342,12 @@ input, textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .label__textarea {
+    width: 270px;
+    margin-bottom: 20px;
+  }
+}
 
 .modal__textarea {
   resize: none;
@@ -302,6 +357,11 @@ input, textarea {
   -webkit-transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #ADACB1;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal__textarea {
+    height: 71px;
+  }
 }
 
 .modal__textarea:focus::-webkit-input-placeholder {
@@ -331,11 +391,17 @@ input, textarea {
 .modal__input-email {
   height: 40px;
   width: 100%;
+  margin-bottom: 37px;
   padding: 15px;
-  margin-bottom: 40px;
   -webkit-transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #ADACB1;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal__input-email {
+    width: 270px;
+    margin-bottom: 30px;
+  }
 }
 
 .modal__input-email:focus {
@@ -377,6 +443,73 @@ input, textarea {
   border-color: var(--accent-color);
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.request {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .request__container {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .request__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.request__btnclose {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+}
+
+.request__title {
+  font-family: "Otomanopee One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--title-color);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 12px;
+}
+
+.request__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--accent-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 12px;
+}
+
+.request__img {
+  width: 335px;
+  margin: 0 auto;
 }
 
 .header {
