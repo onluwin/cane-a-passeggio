@@ -88,16 +88,24 @@
       <div class="mob-menu" id="menu-container" data-menu data-menu-open>
         <ul class="mob-menu__list">
           <li class="mob-menu__item">
-            <a class="mob-menu__link" href="#passeggio">Cane A Passeggio </a>
+            <a class="mob-menu__link js-close-menu" href="#passeggio"
+              >Cane A Passeggio
+            </a>
           </li>
           <li class="mob-menu__item">
-            <a class="mob-menu__link" href="#visita">Visita dal veterinario</a>
+            <a class="mob-menu__link js-close-menu2" href="#visita"
+              >Visita dal veterinario</a
+            >
           </li>
           <li class="mob-menu__item">
-            <a class="mob-menu__link" href="#sitter">Un dog sitter</a>
+            <a class="mob-menu__link js-close-menu3" href="#sitter"
+              >Un dog sitter</a
+            >
           </li>
           <li class="mob-menu__item">
-            <a class="mob-menu__link" href="#altri">Altri servizi</a>
+            <a class="mob-menu__link js-close-menu4" href="#altri"
+              >Altri servizi</a
+            >
           </li>
         </ul>
       </div>
@@ -144,77 +152,102 @@
     </section>
     <section class="visita" id="visita">
       <div class="container">
-        <picture>
-          <source
-            srcset="./images/visita.jpg 1x, ./images/visita-2x.jpg 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./images/visita.jpg 1x, ./images/visita-2x.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="./images/visita-mob.jpg 1x, ./images/visita-mob-2x.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./images/visita.jpg"
-            class="visita__img"
-            alt="Visita dal veterinario"
-            width="350"
-          />
-        </picture>
-        <div class="visita__box--right">
-          <h2 class="visita__title">Visita dal veterinario</h2>
-          <p class="visita__text">
-            Sei impegnato, ed è in questo giorno che devi andare dal
-            veterinario.
-          </p>
-          <p class="visita__text--bottom">
-            Andiamo noi a portarlo a fare la visita dal tuo veterinario.
-          </p>
-          <button class="visita__btn btn" type="button" data-modal-open-2>
-            Servizio d'ordine
-          </button>
+        <div class="visita__row">
+          <div class="picture__row">
+            <picture>
+              <source
+                srcset="./images/visita.jpg 1x, ./images/visita-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/visita.jpg 1x, ./images/visita-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/visita-mob.jpg    1x,
+                  ./images/visita-mob-2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                src="./images/visita.jpg"
+                class="visita__img"
+                alt="Visita dal veterinario"
+                width="350"
+              />
+            </picture>
+          </div>
+          <div class="title__row">
+            <h2 class="visita__title">Visita dal veterinario</h2>
+          </div>
+          <div class="visita__box--right text__row">
+            <div class="visita__title-thumb">
+              <h2 class="sitter__title">Visita dal veterinario</h2>
+            </div>
+            <p class="visita__text">
+              Sei impegnato, ed è in questo giorno che devi andare dal
+              veterinario.
+            </p>
+            <p class="visita__text--bottom">
+              Andiamo noi a portarlo a fare la visita dal tuo veterinario.
+            </p>
+            <button class="visita__btn btn" type="button" data-modal-open-2>
+              Servizio d'ordine
+            </button>
+          </div>
         </div>
       </div>
     </section>
     <section class="sitter" id="sitter">
       <div class="container">
-        <div class="sitter__box--right">
-          <h2 class="sitter__title">Un dog sitter</h2>
-          <p class="sitter__text">
-            Un dog sitter verrà a casa tua e conoscerà il tuo animale domestico.
-          </p>
-          <p class="sitter__text--bottom">
-            Se viene stabilito un contatto, la tata verrà da te all'ora
-            stabilita. Darà da mangiare al tuo cane, lo accompagnerà, ci
-            giocherà molto. In un momento conveniente per te, ti contatteremo
-            per un reportage fotografico e video.
-          </p>
-          <button class="sitter__btn btn" type="button" data-modal-open-3>
-            Servizio d'ordine
-          </button>
+        <div class="sitter__row">
+          <div class="sitter__title-row">
+            <h2 class="sitter__title">Un dog sitter</h2>
+          </div>
+          <div class="sitter__box--left sitter__text-row">
+            <div class="sitter__title-thumb">
+              <h2 class="sitter__title">Un dog sitter</h2>
+            </div>
+            <p class="sitter__text">
+              Un dog sitter verrà a casa tua e conoscerà il tuo animale
+              domestico.
+            </p>
+            <p class="sitter__text--bottom">
+              Se viene stabilito un contatto, la tata verrà da te all'ora
+              stabilita. Darà da mangiare al tuo cane, lo accompagnerà, ci
+              giocherà molto. In un momento conveniente per te, ti contatteremo
+              per un reportage fotografico e video.
+            </p>
+            <button class="sitter__btn btn" type="button" data-modal-open-3>
+              Servizio d'ordine
+            </button>
+          </div>
+          <div class="sitter__picture-row">
+            <picture>
+              <source
+                srcset="./images/sitter.jpg 1x, ./images/sitter-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/sitter.jpg 1x, ./images/sitter-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/sitter-mob.jpg    1x,
+                  ./images/sitter-mob-2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                src="./images/sitter.jpg"
+                class="sitter__img"
+                alt="Un dog sitter"
+              />
+            </picture>
+          </div>
         </div>
-        <picture>
-          <source
-            srcset="./images/sitter.jpg 1x, ./images/sitter-2x.jpg 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./images/sitter.jpg 1x, ./images/sitter-2x.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="./images/sitter-mob.jpg 1x, ./images/sitter-mob-2x.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./images/sitter.jpg"
-            class="sitter__img"
-            alt="Un dog sitter"
-          />
-        </picture>
       </div>
     </section>
     <section class="altri" id="altri">
@@ -276,7 +309,7 @@
           </svg>
         </button>
         <h2 class="modal__title">Servizio d'ordine</h2>
-        <form class="modal__form" action="">
+        <form class="modal__form" action="" id="form">
           <div class="modal__input-container--left">
             <label class="label__name" for="name"
               >Nome<span class="label-span">*</span
@@ -336,34 +369,39 @@
         </form>
       </div>
     </div>
-    <div class="request is-hidden" data-request>
-      <div class="request__container">
-        <button class="request__btnclose" data-request-close type="button">
-          <svg class="request__icon-close" width="15" height="15">
-            <use href="images/icons.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <h2 class="request__title">Request has been sent!</h2>
-        <p class="request__text">We will call you back soon.</p>
-        <picture>
-          <source
-            srcset="./images/request.jpg 1x, ./images/request-2x.jpg 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./images/request.jpg 1x, ./images/request-2x.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="./images/request-mob.jpg 1x, ./images/request-mob-2x.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./images/request.jpg"
-            class="request__img"
-            alt="request has been sent"
-          />
-        </picture>
+    <div class="request__backdrop is-hidden" data-request>
+      <div class="request">
+        <div class="request__container">
+          <button class="request__btnclose" data-request-close type="button">
+            <svg class="request__icon-close" width="15" height="15">
+              <use href="images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <h2 class="request__title">Request has been sent!</h2>
+          <p class="request__text">We will call you back soon.</p>
+          <picture>
+            <source
+              srcset="./images/request.jpg 1x, ./images/request-2x.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="./images/request.jpg 1x, ./images/request-2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/request-mob.jpg    1x,
+                ./images/request-mob-2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              src="./images/request.jpg"
+              class="request__img"
+              alt="request has been sent"
+            />
+          </picture>
+        </div>
       </div>
     </div>
     <script src="./js/mobile-menu.js"></script>

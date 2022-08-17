@@ -14,3 +14,19 @@
       refs.body.classList.toggle("no-scroll");
   }
 })();
+
+
+// const request = {
+//   openRequestBtn: document.querySelector("[#1]"),
+// }
+
+// $("#1").on("click", function () {
+//         e.preventDefault();
+// });
+   
+
+// let but = document.getElementById('1');
+
+// but.onclick = function () {
+//   evt.preventDefault();
+// }

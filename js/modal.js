@@ -17,6 +17,19 @@
 
 
 
+// $('form button[type=submit]').on('click',function(){
+// //тут мы сериализуем данные формы и отправляет ajax-запросом, ну и делаем всё, что нам нужно
+// });
+
+// function Test() {
+//   const [buttonType, setButtonType] = React.useState('submit');
+
+//   const changeButtonTypeHandler = () => {
+//     setButtonType('button');
+//   }
+// }
+
+
 // (() => {
 //   const refs = {
 //     openRequestBtn: document.querySelector("[data-request-open]"),
@@ -29,7 +42,7 @@
 //   refs.closeRequestBtn.addEventListener("click", toggleRequest);
 
 //   function toggleRequest() {
-//       refs.request.classList.toggle("is-hidden");
+//       refs.request.classList.toggle("is-open");
 //       refs.body.classList.toggle("no-scroll");
 //   }
 // })();

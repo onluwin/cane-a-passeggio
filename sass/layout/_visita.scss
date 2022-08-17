@@ -70,3 +70,69 @@
         margin-bottom: 15px;
     }
 }
+
+
+.visita__row {
+    display: flex;
+
+    @include mobile {
+        display: grid;
+    }
+
+}
+
+.picture__row {
+    @include desktop {
+        margin-right: 209px;
+    }
+
+    @include mobile {
+        order: 2;
+    }
+
+}
+
+.visita__title-thumb {
+    @include mobile {
+        display: none;
+    }
+
+}
+
+.title__row {
+    @include mobile {
+        order: 1;
+    }
+
+    @include desktop {
+        display: none;
+    }
+
+}
+
+.text__row {
+    @include mobile {
+        order: 3;
+    }
+
+}
+
+
+
+.sitter__row {
+    display: flex;
+
+    @include mobile {
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+
+.sitter__box--right {
+    @include desktop {
+        margin-right: 209px;
+    }
+
+}

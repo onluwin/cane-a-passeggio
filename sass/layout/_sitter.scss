@@ -10,8 +10,6 @@
         display: flex;
             max-width: 1200px;
             margin: 0 auto;
-            padding-left: 15px;
-            padding-right: 15px;
     }
     @include mobile {
         max-width: 375px;
@@ -21,11 +19,7 @@
     }
 }
 
-.sitter__box--right {
-    @include desktop {
-        width: 467px;
-        margin-right: auto;
-    }
+.sitter__box--left {
 }
 
 .sitter__img {
@@ -36,6 +30,7 @@
     }
     @include desktop {
         width: 539px;
+        margin: 0 auto;
     }
 }
 
@@ -73,4 +68,71 @@
     @include mobile {
         margin-bottom: 15px;
     }
+}
+
+
+.sitter__row {
+    display: flex;
+
+    @include mobile {
+        display: grid;
+    }
+
+}
+
+.sitter__picture-row {
+    @include desktop {
+        width: 539px;
+        margin-left: 209px;
+    }
+
+    @include mobile {
+        order: 2;
+    }
+
+}
+
+.sitter__title-thumb {
+    @include mobile {
+        display: none;
+    }
+}
+
+.sitter__title-row {
+    @include mobile {
+        order: 3;
+    }
+
+    @include desktop {
+        display: none;
+    }
+
+}
+
+.sitter__text-row {
+    @include mobile {
+        order: 1;
+    }
+    @include desktop {
+        width: 467px;
+        margin-right: auto;
+    }
+}
+
+
+
+.sitter__row {
+    display: flex;
+    @include mobile {
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+
+.sitter__box--left {
+    @include desktop {
+    }
+
 }
