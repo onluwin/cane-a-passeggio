@@ -2,7 +2,7 @@
 
 $name = $_POST['nome'];
 $phone = $_POST['numero_di_telefono'];
-$serizo = $_POST['servizio'];
+$servizio = $_POST['servizio'];
 $un_commento = $_POST['un_commento'];
 $email = $_POST['email'];
 $token = "5474010313:AAGVV-bx5w_hG9vyYDLj2jm6hIoXrDIF90M";
@@ -11,7 +11,7 @@ $arr = array(
   'Имя пользователя: ' => $name,
   'Телефон: ' => $phone,
   'Email' => $email,
-  'Serizo:' => $serizo,
+  'Servizio:' => $servizio,
 'Un_commento:' => $un_commento,
 );
 
