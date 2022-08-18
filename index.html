@@ -1,413 +1,469 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Cane a passeggio</title>
-  </head>
-  <body>
-    <header class="header" id="header">
-      <div class="container">
-        <h1 class="header__title">Un dog sitter a Vercelli</h1>
-        <nav class="nav">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link" href="#passeggio">Cane a passeggio</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#visita">Visita dal veterinario</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#sitter">Un dog sitter</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#altri">Altri servizi</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="header__tel" href="tel:+393519297633"
-          ><svg class="header__tel-icon" width="25" height="25">
-            <use href="./images/icons.svg#icon-phone"></use></svg
-          >+393519297633</a
-        >
-        <button
-          class="mob-menu__btn"
-          aria-controls="menu-container"
-          data-menu-button
-          type="button"
-        >
-          <svg class="mob-menu__icon" width="24" height="24">
-            <use
-              class="mob-menu__icon--open"
-              href="./images/icons.svg#icon-mob-menu--open"
-            ></use>
-            <use
-              class="mob-menu__icon--close"
-              href="./images/icons.svg#icon-mob-menu--close"
-            ></use>
-          </svg>
-        </button>
-      </div>
-
-      <!-- MOB-MENU -->
-
-      <div class="mob-menu" id="menu-container" data-menu data-menu-open>
-        <ul class="mob-menu__list">
-          <li class="mob-menu__item">
-            <a class="mob-menu__link js-close-menu" href="#passeggio"
-              >Cane A Passeggio
-            </a>
-          </li>
-          <li class="mob-menu__item">
-            <a class="mob-menu__link js-close-menu2" href="#visita"
-              >Visita dal veterinario</a
-            >
-          </li>
-          <li class="mob-menu__item">
-            <a class="mob-menu__link js-close-menu3" href="#sitter"
-              >Un dog sitter</a
-            >
-          </li>
-          <li class="mob-menu__item">
-            <a class="mob-menu__link js-close-menu4" href="#altri"
-              >Altri servizi</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <section class="passeggio" id="passeggio">
-      <div class="container">
-        <div class="passeggio__box--left">
-          <p class="passeggio__text">
-            Sei impegnato al lavoro o in viaggio d'affari, sei malato o
-            semplicemente stanco e il tuo animale domestico ha bisogno di
-            passeggiate regolari?
-          </p>
-          <p class="passeggio__text--bottom">
-            Siamo pronti ad aiutare e prenderci cura del tuo animale domestico.
-          </p>
-          <button class="passeggio__btn btn" type="button" data-modal-open>
-            Servizio d'ordine
-          </button>
-        </div>
-        <picture>
-          <source
-            srcset="./images/passeggio.jpg 1x, ./images/passeggio-2x.jpg 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./images/passeggio.jpg 1x, ./images/passeggio-2x.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./images/passeggio-mob.jpg    1x,
-              ./images/passeggio-mob-2x.jpg 2x
-            "
-            media="(min-width: 320px)"
-          />
-          <img
-            src="./images/passeggio.jpg"
-            class="passeggio__img"
-            alt="Cane a passeggio"
-            width="539"
-          />
-        </picture>
-      </div>
-    </section>
-    <section class="visita" id="visita">
-      <div class="container">
-        <div class="visita__row">
-          <div class="picture__row">
-            <picture>
-              <source
-                srcset="./images/visita.jpg 1x, ./images/visita-2x.jpg 2x"
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="./images/visita.jpg 1x, ./images/visita-2x.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/visita-mob.jpg    1x,
-                  ./images/visita-mob-2x.jpg 2x
-                "
-                media="(min-width: 320px)"
-              />
-              <img
-                src="./images/visita.jpg"
-                class="visita__img"
-                alt="Visita dal veterinario"
-                width="350"
-              />
-            </picture>
-          </div>
-          <div class="title__row">
-            <h2 class="visita__title">Visita dal veterinario</h2>
-          </div>
-          <div class="visita__box--right text__row">
-            <div class="visita__title-thumb">
-              <h2 class="sitter__title">Visita dal veterinario</h2>
+    <head>
+        <link rel="stylesheet" href="./css/main.min.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="shortcut icon"
+            href="./images/favicon.svg"
+            type="image/svg"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <title>Cane a passeggio</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <div class="container">
+                <h1 class="header__title">Un dog sitter a Vercelli</h1>
+                <nav class="nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="#passeggio"
+                                >Cane a passeggio</a
+                            >
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#visita"
+                                >Visita dal veterinario</a
+                            >
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#sitter"
+                                >Un dog sitter</a
+                            >
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#altri"
+                                >Altri servizi</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__tel" href="tel:+393519297633"
+                    ><svg class="header__tel-icon" width="25" height="25">
+                        <use href="./images/icons.svg#icon-phone"></use></svg
+                    >+393519297633</a
+                >
+                <button
+                    class="mob-menu__btn"
+                    aria-controls="menu-container"
+                    data-menu-button
+                    type="button"
+                >
+                    <svg class="mob-menu__icon" width="24" height="24">
+                        <use
+                            class="mob-menu__icon--open"
+                            href="./images/icons.svg#icon-mob-menu--open"
+                        ></use>
+                        <use
+                            class="mob-menu__icon--close"
+                            href="./images/icons.svg#icon-mob-menu--close"
+                        ></use>
+                    </svg>
+                </button>
             </div>
-            <p class="visita__text">
-              Sei impegnato, ed è in questo giorno che devi andare dal
-              veterinario.
-            </p>
-            <p class="visita__text--bottom">
-              Andiamo noi a portarlo a fare la visita dal tuo veterinario.
-            </p>
-            <button class="visita__btn btn" type="button" data-modal-open-2>
-              Servizio d'ordine
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="sitter" id="sitter">
-      <div class="container">
-        <div class="sitter__row">
-          <div class="sitter__title-row">
-            <h2 class="sitter__title">Un dog sitter</h2>
-          </div>
-          <div class="sitter__box--left sitter__text-row">
-            <div class="sitter__title-thumb">
-              <h2 class="sitter__title">Un dog sitter</h2>
+
+            <!-- MOB-MENU -->
+
+            <div class="mob-menu" id="menu-container" data-menu data-menu-open>
+                <ul class="mob-menu__list">
+                    <li class="mob-menu__item">
+                        <a
+                            class="mob-menu__link js-close-menu"
+                            href="#passeggio"
+                            >Cane A Passeggio
+                        </a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link js-close-menu2" href="#visita"
+                            >Visita dal veterinario</a
+                        >
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link js-close-menu3" href="#sitter"
+                            >Un dog sitter</a
+                        >
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link js-close-menu4" href="#altri"
+                            >Altri servizi</a
+                        >
+                    </li>
+                </ul>
             </div>
-            <p class="sitter__text">
-              Un dog sitter verrà a casa tua e conoscerà il tuo animale
-              domestico.
-            </p>
-            <p class="sitter__text--bottom">
-              Se viene stabilito un contatto, la tata verrà da te all'ora
-              stabilita. Darà da mangiare al tuo cane, lo accompagnerà, ci
-              giocherà molto. In un momento conveniente per te, ti contatteremo
-              per un reportage fotografico e video.
-            </p>
-            <button class="sitter__btn btn" type="button" data-modal-open-3>
-              Servizio d'ordine
-            </button>
-          </div>
-          <div class="sitter__picture-row">
-            <picture>
-              <source
-                srcset="./images/sitter.jpg 1x, ./images/sitter-2x.jpg 2x"
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="./images/sitter.jpg 1x, ./images/sitter-2x.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./images/sitter-mob.jpg    1x,
-                  ./images/sitter-mob-2x.jpg 2x
-                "
-                media="(min-width: 320px)"
-              />
-              <img
-                src="./images/sitter.jpg"
-                class="sitter__img"
-                alt="Un dog sitter"
-              />
-            </picture>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="altri" id="altri">
-      <div class="container">
-        <h2 class="altri__title">Altri servizi</h2>
-        <div class="altri__box-wrap">
-          <div class="altri__box--left">
-            <p class="altri__text">Lorem ipsum dolor sit.</p>
-            <p class="altri__text-bottom">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-              voluptatibus incidunt sapiente eaque veniam?
-            </p>
-          </div>
-          <div class="altri__box--right">
-            <p class="altri__text">Lorem ipsum dolor sit.</p>
-            <p class="altri__text-bottom">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-              voluptatibus incidunt sapiente eaque veniam?
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__list-wrap">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#header">Un dog sitter a Vercelli</a>
-            </li>
-            <li class="footer__item"><a href="#passeggio">Home</a></li>
-            <li class="footer__item"><a href="">Politica per la Privacy</a></li>
-            <li class="footer__item">2022</li>
-          </ul>
-        </div>
-        <div class="mobile-footer">
-          <h3 class="mobile-footer__title">Un dog sitter a Vercelli</h3>
-          <a class="mobile-footer__tel" href="tel:+393519297633"
-            ><svg class="mobile-footer__tel-icon" width="19" height="19">
-              <use href="./images/icons.svg#icon-foot-tel"></use></svg
-            >+393519297633</a
-          >
-          <ul class="mobile-footer__list">
-            <li class="mobile-footer__item">Home</li>
-            <li class="mobile-footer__item">Politica per la Privacy</li>
-            <li class="mobile-footer__item">2022</li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+        </header>
+        <section class="passeggio" id="passeggio">
+            <div class="container">
+                <div class="passeggio__box--left">
+                    <p class="passeggio__text">
+                        Sei impegnato al lavoro o in viaggio d'affari, sei
+                        malato o semplicemente stanco e il tuo animale domestico
+                        ha bisogno di passeggiate regolari?
+                    </p>
+                    <p class="passeggio__text--bottom">
+                        Siamo pronti ad aiutare e prenderci cura del tuo animale
+                        domestico.
+                    </p>
+                    <button
+                        class="passeggio__btn btn"
+                        type="button"
+                        data-modal-open
+                    >
+                        Servizio d'ordine
+                    </button>
+                </div>
+                <picture>
+                    <source
+                        srcset="
+                            ./images/passeggio.jpg    1x,
+                            ./images/passeggio-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                            ./images/passeggio.jpg    1x,
+                            ./images/passeggio-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="
+                            ./images/passeggio-mob.jpg    1x,
+                            ./images/passeggio-mob-2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                    />
+                    <img
+                        src="./images/passeggio.jpg"
+                        class="passeggio__img"
+                        alt="Cane a passeggio"
+                        width="539"
+                    />
+                </picture>
+            </div>
+        </section>
+        <section class="visita" id="visita">
+            <div class="container">
+                <div class="visita__row">
+                    <div class="picture__row">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/visita.jpg    1x,
+                                    ./images/visita-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/visita.jpg    1x,
+                                    ./images/visita-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/visita-mob.jpg    1x,
+                                    ./images/visita-mob-2x.jpg 2x
+                                "
+                                media="(min-width: 320px)"
+                            />
+                            <img
+                                src="./images/visita.jpg"
+                                class="visita__img"
+                                alt="Visita dal veterinario"
+                                width="350"
+                            />
+                        </picture>
+                    </div>
+                    <div class="title__row">
+                        <h2 class="visita__title">Visita dal veterinario</h2>
+                    </div>
+                    <div class="visita__box--right text__row">
+                        <div class="visita__title-thumb">
+                            <h2 class="sitter__title">
+                                Visita dal veterinario
+                            </h2>
+                        </div>
+                        <p class="visita__text">
+                            Sei impegnato, ed è in questo giorno che devi andare
+                            dal veterinario.
+                        </p>
+                        <p class="visita__text--bottom">
+                            Andiamo noi a portarlo a fare la visita dal tuo
+                            veterinario.
+                        </p>
+                        <button
+                            class="visita__btn btn"
+                            type="button"
+                            data-modal-open-2
+                        >
+                            Servizio d'ordine
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sitter" id="sitter">
+            <div class="container">
+                <div class="sitter__row">
+                    <div class="sitter__title-row">
+                        <h2 class="sitter__title">Un dog sitter</h2>
+                    </div>
+                    <div class="sitter__box--left sitter__text-row">
+                        <div class="sitter__title-thumb">
+                            <h2 class="sitter__title">Un dog sitter</h2>
+                        </div>
+                        <p class="sitter__text">
+                            Un dog sitter verrà a casa tua e conoscerà il tuo
+                            animale domestico.
+                        </p>
+                        <p class="sitter__text--bottom">
+                            Se viene stabilito un contatto, la tata verrà da te
+                            all'ora stabilita. Darà da mangiare al tuo cane, lo
+                            accompagnerà, ci giocherà molto. In un momento
+                            conveniente per te, ti contatteremo per un reportage
+                            fotografico e video.
+                        </p>
+                        <button
+                            class="sitter__btn btn"
+                            type="button"
+                            data-modal-open-3
+                        >
+                            Servizio d'ordine
+                        </button>
+                    </div>
+                    <div class="sitter__picture-row">
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/sitter.jpg    1x,
+                                    ./images/sitter-2x.jpg 2x
+                                "
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/sitter.jpg    1x,
+                                    ./images/sitter-2x.jpg 2x
+                                "
+                                media="(min-width: 768px)"
+                            />
+                            <source
+                                srcset="
+                                    ./images/sitter-mob.jpg    1x,
+                                    ./images/sitter-mob-2x.jpg 2x
+                                "
+                                media="(min-width: 320px)"
+                            />
+                            <img
+                                src="./images/sitter.jpg"
+                                class="sitter__img"
+                                alt="Un dog sitter"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="altri" id="altri">
+            <div class="container">
+                <h2 class="altri__title">Altri servizi</h2>
+                <div class="altri__box-wrap">
+                    <div class="altri__box--left">
+                        <p class="altri__text">Lorem ipsum dolor sit.</p>
+                        <p class="altri__text-bottom">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quae voluptatibus incidunt sapiente eaque
+                            veniam?
+                        </p>
+                    </div>
+                    <div class="altri__box--right">
+                        <p class="altri__text">Lorem ipsum dolor sit.</p>
+                        <p class="altri__text-bottom">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quae voluptatibus incidunt sapiente eaque
+                            veniam?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__list-wrap">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#header">Un dog sitter a Vercelli</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#passeggio">Home</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="">Politica per la Privacy</a>
+                        </li>
+                        <li class="footer__item">2022</li>
+                    </ul>
+                </div>
+                <div class="mobile-footer">
+                    <h3 class="mobile-footer__title">
+                        Un dog sitter a Vercelli
+                    </h3>
+                    <a class="mobile-footer__tel" href="tel:+393519297633"
+                        ><svg
+                            class="mobile-footer__tel-icon"
+                            width="19"
+                            height="19"
+                        >
+                            <use
+                                href="./images/icons.svg#icon-foot-tel"
+                            ></use></svg
+                        >+393519297633</a
+                    >
+                    <ul class="mobile-footer__list">
+                        <li class="mobile-footer__item">Home</li>
+                        <li class="mobile-footer__item">
+                            Politica per la Privacy
+                        </li>
+                        <li class="mobile-footer__item">2022</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
-    <!-- MODAL -->
+        <!-- MODAL -->
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal__btnclose" data-modal-close type="button">
-          <svg class="modal__icon-close" width="15" height="15">
-            <use href="images/icons.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <h2 class="modal__title">Servizio d'ordine</h2>
-        <form class="modal__form" action="" id="form">
-          <div class="modal__input-container--left">
-            <label class="label__name" for="name"
-              >Nome<span class="label-span">*</span
-              ><input
-                class="modal__input-name"
-                name="nome"
-                required
-                type="name"
-                id="name"
-            /></label>
-            <label class="label__tel" for="tel"
-              >Numero di telefono<span class="label-span">*</span
-              ><input
-                class="modal__input-tel"
-                required
-                type="tel"
-                name="numero di telefono"
-                id="tel"
-            /></label>
-            <label class="label__select" for="servizio">
-              Tipologia di servizio<span class="label-span">*</span>
-              <select required class="select" name="servizio" id="servizio">
-                <option value="" disabled selected>Scegli un servizio</option>
-                <option value="Cane a passeggio">Cane a passeggio</option>
-                <option value="Visita dal veterinario">
-                  Visita dal veterinario
-                </option>
-                <option value="Un dog sitter">Un dog sitter</option>
-                <option value="Altri servizi">Altri servizi</option>
-              </select>
-            </label>
-            <p class="help">
-              <span class="label-span">*</span> - Сampo obbligatorio
-            </p>
-          </div>
-          <div class="modal__input-container--right">
-            <label class="label__textarea" for="comment"
-              >Un commento
-              <textarea
-                class="modal__textarea"
-                placeholder="Per favore scrivi esattamente cosa vorresti"
-                name="un commento"
-                id="comment"
-              ></textarea>
-            </label>
-            <label class="label__email" for="email"
-              >Email<input
-                class="modal__input-email"
-                type="email"
-                id="email"
-                name="email"
-            /></label>
-            <button class="modal__btnsubmit" type="submit" data-request-open>
-              MANDARE
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="request__backdrop is-hidden" data-request>
-      <div class="request">
-        <div class="request__container">
-          <button class="request__btnclose" data-request-close type="button">
-            <svg class="request__icon-close" width="15" height="15">
-              <use href="images/icons.svg#icon-cross"></use>
-            </svg>
-          </button>
-          <h2 class="request__title">Request has been sent!</h2>
-          <p class="request__text">We will call you back soon.</p>
-          <picture>
-            <source
-              srcset="./images/request.jpg 1x, ./images/request-2x.jpg 2x"
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="./images/request.jpg 1x, ./images/request-2x.jpg 2x"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/request-mob.jpg    1x,
-                ./images/request-mob-2x.jpg 2x
-              "
-              media="(min-width: 320px)"
-            />
-            <img
-              src="./images/request.jpg"
-              class="request__img"
-              alt="request has been sent"
-            />
-          </picture>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal__btnclose" data-modal-close type="button">
+                    <svg class="modal__icon-close" width="15" height="15">
+                        <use href="images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <h2 class="modal__title">Servizio d'ordine</h2>
+                <form
+                    class="modal__form"
+                    method="post"
+                    action="/send.php"
+                    id="form"
+                >
+                    <div class="modal__input-container--left">
+                        <label class="label__name" for="name"
+                            >Nome<span class="label-span">*</span
+                            ><input
+                                class="modal__input-name"
+                                name="nome"
+                                required
+                                type="name"
+                                id="name"
+                        /></label>
+                        <label class="label__tel" for="tel"
+                            >Numero di telefono<span class="label-span">*</span
+                            ><input
+                                class="modal__input-tel"
+                                required
+                                type="tel"
+                                name="numero_di_telefono"
+                                id="tel"
+                        /></label>
+                        <label class="label__select" for="servizio">
+                            Tipologia di servizio<span class="label-span"
+                                >*</span
+                            >
+                            <select
+                                required
+                                class="select"
+                                name="servizio"
+                                id="servizio"
+                            >
+                                <option value="" disabled selected>
+                                    Scegli un servizio
+                                </option>
+                                <option value="Cane a passeggio">
+                                    Cane a passeggio
+                                </option>
+                                <option value="Visita dal veterinario">
+                                    Visita dal veterinario
+                                </option>
+                                <option value="Un dog sitter">
+                                    Un dog sitter
+                                </option>
+                                <option value="Altri servizi">
+                                    Altri servizi
+                                </option>
+                            </select>
+                        </label>
+                        <p class="help">
+                            <span class="label-span">*</span> - Сampo
+                            obbligatorio
+                        </p>
+                    </div>
+                    <div class="modal__input-container--right">
+                        <label class="label__textarea" for="comment"
+                            >Un commento
+                            <textarea
+                                class="modal__textarea"
+                                placeholder="Per favore scrivi esattamente cosa vorresti"
+                                name="un_commento"
+                                id="comment"
+                            ></textarea>
+                        </label>
+                        <label class="label__email" for="email"
+                            >Email<input
+                                class="modal__input-email"
+                                type="email"
+                                id="email"
+                                name="email"
+                        /></label>
+                        <button
+                            class="modal__btnsubmit"
+                            type="submit"
+                            data-request-open
+                        >
+                            MANDARE
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-      </div>
-    </div>
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/modal2.js"></script>
-    <script src="./js/modal3.js"></script>
-    <script src="./js/request.js"></script>
-  </body>
+
+        <script src="./js/mobile-menu.js"></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/modal2.js"></script>
+        <script src="./js/modal3.js"></script>
+        <script src="./js/request.js"></script>
+    </body>
 </html>
