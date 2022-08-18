@@ -6,12 +6,12 @@ $servizio = $_POST['servizio'];
 $un_commento = $_POST['un_commento'];
 $email = $_POST['email'];
 $token = "5474010313:AAGVV-bx5w_hG9vyYDLj2jm6hIoXrDIF90M";
-$chat_id = "-732983981";
+$chat_id = "-1200077397";
 $arr = array(
   'Имя пользователя: ' => $name,
   'Телефон: ' => $phone,
   'Email' => $email,
-  'Servizio:' => $servizio,
+  'servizio:' => $servizio,
 'Un_commento:' => $un_commento,
 );
 
@@ -24,6 +24,7 @@ $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_i
 if ($sendToTelegram && $sendToTelegram2) {
   header('Location: thankpage.html');
 } else {
-  echo "Error";
+   header('Location: thankpage.html');
 }
+
 ?>
