@@ -305,7 +305,6 @@
 
     <!-- MODAL -->
 
-    <div id="response"></div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btnclose" data-modal-close type="button">
@@ -314,7 +313,7 @@
           </svg>
         </button>
         <h2 class="modal__title">Servizio d'ordine</h2>
-        <form class="modal__form" name="form" id="form">
+        <form class="modal__form" name="form">
           <div class="modal__input-container--left">
             <label class="label__name" for="name"
               >Nome<span class="label-span">*</span
@@ -329,14 +328,14 @@
               >Numero di telefono<span class="label-span">*</span
               ><input
                 class="modal__input-tel"
-                require
+                required
                 type="tel"
                 name="numero_di_telefono"
                 id="tel"
             /></label>
             <label class="label__select" for="servizio">
               Tipologia di servizio<span class="label-span">*</span>
-              <select require class="select" name="servizio" id="servizio">
+              <select required class="select" name="servizio" id="servizio">
                 <option value="" disabled selected>Scegli un servizio</option>
                 <option value="Cane a passeggio">Cane a passeggio</option>
                 <option value="Visita dal veterinario">

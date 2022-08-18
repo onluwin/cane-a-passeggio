@@ -153,9 +153,11 @@ input, textarea {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   display: block;
+  overflow-y: auto;
 }
 
 .modal {
+  overflow-y: auto;
   min-height: 525px;
   z-index: 3;
   border-radius: 4px;
@@ -173,7 +175,7 @@ input, textarea {
   .modal {
     width: 100vw;
     height: 100vh;
-    padding: 0;
+    padding: 20px;
   }
 }
 .modal__title {
@@ -197,21 +199,23 @@ input, textarea {
   }
 }
 
-.modal__btnclose {
+.modal__btnclose, .request__btnclose {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   position: relative;
   border: none;
   background-color: transparent;
-  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 17px;
   right: 16px;
+  fill: #ADACB1;
 }
 
-.modal__btnclose:hover svg {
+.modal__btnclose:hover svg, .modal__btnclose:focus svg,
+.request__btnclose:hover svg, .request__btnclose:focus svg {
   fill: var(--accent-color);
   -webkit-transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -481,8 +485,16 @@ input, textarea {
   border: none;
   background-color: transparent;
   position: absolute;
-  top: 24px;
-  right: 20px;
+  top: 11px;
+  right: 10px;
+}
+
+.request__icon-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .request__title {
@@ -523,6 +535,7 @@ input, textarea {
 .request__img {
   width: 335px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .header {
