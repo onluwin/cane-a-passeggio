@@ -11,7 +11,11 @@ $arr = array(
   'Имя пользователя: ' => $name,
   'Телефон: ' => $phone,
   'Email' => $email,
+<<<<<<< HEAD
   'servizio:' => $servizio,
+=======
+  'Servizio:' => $servizio,
+>>>>>>> ad57fc9de03972f098f4e6832cec9edce41e312a
 'Un_commento:' => $un_commento,
 );
 
