@@ -47,3 +47,16 @@
 //   }
 // })();
 
+var servResponse = document.querySelector("#response");
+
+document.forms.form.onsubmit = function (e) { 
+  e.preventDefault();
+
+  var userInput = document.forms.form.nome.value;
+  
+  var xhr = new XMLHttpRequest();
+
+  xhr.open("POST", "ajax_quest.php");
+  xhr.setRequestHeader("contentType", "application/x-www-form-urlencoded");
+  xhr.send("nome=" + userInput);
+};
