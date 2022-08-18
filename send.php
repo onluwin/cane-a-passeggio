@@ -1,5 +1,3 @@
-
-
 <?php
 
 $name = $_POST['nome'];
@@ -8,16 +6,12 @@ $servizio = $_POST['servizio'];
 $un_commento = $_POST['un_commento'];
 $email = $_POST['email'];
 $token = "5474010313:AAGVV-bx5w_hG9vyYDLj2jm6hIoXrDIF90M";
-$chat_id = "-732983981";
+$chat_id = "-1200077397";
 $arr = array(
   'Имя пользователя: ' => $name,
   'Телефон: ' => $phone,
   'Email' => $email,
-<<<<<<< HEAD
   'servizio:' => $servizio,
-=======
-  'Servizio:' => $servizio,
->>>>>>> ad57fc9de03972f098f4e6832cec9edce41e312a
 'Un_commento:' => $un_commento,
 );
 
@@ -30,8 +24,7 @@ $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_i
 if ($sendToTelegram && $sendToTelegram2) {
   header('Location: thankpage.html');
 } else {
-  echo "Error";
+   header('Location: thankpage.html');
 }
 
 ?>
-/
