@@ -10,8 +10,10 @@
 .visita .container {
     @include desktop {
         display: flex;
-            max-width: 1200px;
-            margin: 0 auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
     }
     @include mobile {
         max-width: 375px;

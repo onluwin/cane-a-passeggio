@@ -79,7 +79,7 @@ input, textarea {
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .btn {
     width: 140px;
     height: 36px;
@@ -131,7 +131,31 @@ input, textarea {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
+.scrollbtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: 2px solid var(--accent-color);
+  outline: none;
+  background-color: transparent;
+  color: var(--title-color);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), border 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), border 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scrollbtn:hover {
+  background-color: var(--accent-color);
+  color: var(--btn-text-color);
+  -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -171,7 +195,7 @@ input, textarea {
   -webkit-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .modal {
     width: 100vw;
     height: 100vh;
@@ -190,7 +214,7 @@ input, textarea {
   margin-bottom: 18px;
   color: var(--title-color);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .modal__title {
     font-weight: 400;
     font-size: 20px;
@@ -240,7 +264,7 @@ input, textarea {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .modal__form {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -252,7 +276,7 @@ input, textarea {
 .modal__input-container--left {
   width: 302px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal__input-container--left {
     padding: 20px;
   }
@@ -261,7 +285,7 @@ input, textarea {
 .modal__input-container--right {
   width: 302px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal__input-container--right {
     padding: 20px;
   }
@@ -281,7 +305,7 @@ input, textarea {
   transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #ADACB1;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .modal__input-name {
     width: 270px;
     margin-bottom: 20px;
@@ -305,7 +329,7 @@ input, textarea {
   transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #ADACB1;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .modal__input-tel {
     width: 270px;
     margin-bottom: 20px;
@@ -333,7 +357,7 @@ input, textarea {
   bottom: 70px;
   font-size: 14px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .help {
     display: none;
   }
@@ -347,7 +371,7 @@ input, textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .label__textarea {
     width: 270px;
     margin-bottom: 20px;
@@ -363,7 +387,7 @@ input, textarea {
   transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #ADACB1;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .modal__textarea {
     height: 71px;
   }
@@ -402,7 +426,7 @@ input, textarea {
   transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #ADACB1;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .modal__input-email {
     width: 270px;
     margin-bottom: 30px;
@@ -468,13 +492,13 @@ input, textarea {
   width: 789px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .request__container {
     max-width: 375px;
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .request__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -551,7 +575,7 @@ input, textarea {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .header {
     height: 72px;
     position: relative;
@@ -562,7 +586,7 @@ input, textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -573,14 +597,14 @@ input, textarea {
     padding-left: 15px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .header .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 375px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin: 0 auto;
   }
 }
@@ -597,7 +621,7 @@ input, textarea {
           align-items: center;
   color: var(--title-color);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .header__title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -608,7 +632,7 @@ input, textarea {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header__title {
     width: 378px;
     margin-right: 38px;
@@ -621,7 +645,7 @@ input, textarea {
   display: flex;
   margin-right: auto;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .nav {
     display: none;
   }
@@ -690,7 +714,7 @@ input, textarea {
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .header__tel {
     display: none;
   }
@@ -726,7 +750,7 @@ input, textarea {
   background-color: transparent;
   z-index: 3;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .mob-menu__btn {
     display: none;
   }
@@ -759,11 +783,6 @@ input, textarea {
           align-items: center;
   fill: var(--title-color);
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .mob-menu__icon {
-    display: none;
-  }
-}
 
 .mob-menu__icon--close {
   display: none;
@@ -789,24 +808,19 @@ input, textarea {
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), translate 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), translate 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .mob-menu {
     display: none;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .mob-menu .container {
     max-width: 375px;
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 768px) {
-  .mob-menu .container {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .mob-menu .container {
     display: none;
   }
@@ -844,29 +858,34 @@ input, textarea {
 .passeggio {
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .passeggio {
     padding-top: 199px;
     margin-bottom: 212px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .passeggio {
     padding-top: 78px;
     margin-bottom: 40px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .passeggio .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .passeggio .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -882,7 +901,7 @@ input, textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .passeggio__box--left {
     width: 424px;
     margin-right: auto;
@@ -898,7 +917,7 @@ input, textarea {
   font-size: 17px;
   line-height: 1.7222222222;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .passeggio__text {
     font-size: 16px;
     line-height: 1.3125;
@@ -914,7 +933,7 @@ input, textarea {
   font-size: 17px;
   line-height: 1.7222222222;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .passeggio__text--bottom {
     font-size: 16px;
     line-height: 1.3125;
@@ -922,7 +941,7 @@ input, textarea {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .passeggio__btn {
     width: 140px;
     height: 36px;
@@ -930,7 +949,7 @@ input, textarea {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .passeggio__img {
     margin-bottom: 15px;
   }
@@ -939,27 +958,29 @@ input, textarea {
 .visita {
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .visita {
     margin-bottom: 170px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .visita {
     margin-bottom: 40px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .visita .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .visita .container {
     max-width: 375px;
     margin: 0 auto;
@@ -968,7 +989,7 @@ input, textarea {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .visita__img {
     max-width: 238px;
     margin: 0 auto;
@@ -987,12 +1008,12 @@ input, textarea {
   font-size: 40px;
   line-height: 1.2083333333;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .visita__title {
     margin-top: 77px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .visita__title {
     margin-bottom: 15px;
     font-size: 20px;
@@ -1025,7 +1046,7 @@ input, textarea {
   line-height: 1.7222222222;
   font-family: "Montserrat Alternates", sans-serif;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .visita__text--bottom {
     margin-bottom: 15px;
   }
@@ -1036,18 +1057,18 @@ input, textarea {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .visita__row {
     display: grid;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .picture__row {
     margin-right: 209px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .picture__row {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -1055,26 +1076,26 @@ input, textarea {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .visita__title-thumb {
     display: none;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .title__row {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .title__row {
     display: none;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .text__row {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -1087,7 +1108,7 @@ input, textarea {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1096,7 +1117,7 @@ input, textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .sitter__box--right {
     margin-right: 209px;
   }
@@ -1106,22 +1127,24 @@ input, textarea {
   width: 100%;
   margin-bottom: 70px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter {
     margin-bottom: 40px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .sitter .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter .container {
     max-width: 375px;
     margin: 0 auto;
@@ -1130,14 +1153,14 @@ input, textarea {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter__img {
     width: 308px;
     margin: 0 auto;
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .sitter__img {
     width: 539px;
     margin: 0 auto;
@@ -1151,7 +1174,7 @@ input, textarea {
   line-height: 1.2083333333;
   color: var(--title-color);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter__title {
     font-weight: 400;
     font-size: 20px;
@@ -1178,7 +1201,7 @@ input, textarea {
   color: var(--primary-text-color);
   margin-bottom: 50px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter__text--bottom {
     margin-bottom: 15px;
   }
@@ -1189,19 +1212,19 @@ input, textarea {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter__row {
     display: grid;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .sitter__picture-row {
     width: 539px;
-    margin-left: 209px;
+    margin-left: 170px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter__picture-row {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -1209,33 +1232,33 @@ input, textarea {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter__title-thumb {
     display: none;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter__title-row {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .sitter__title-row {
     display: none;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter__text-row {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .sitter__text-row {
     width: 467px;
     margin-right: auto;
@@ -1247,7 +1270,7 @@ input, textarea {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .sitter__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1260,13 +1283,13 @@ input, textarea {
   width: 100%;
   margin-bottom: 70px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .altri {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .altri .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1274,7 +1297,7 @@ input, textarea {
     padding-right: 15px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .altri .container {
     max-width: 375px;
     margin: 0 auto;
@@ -1293,7 +1316,7 @@ input, textarea {
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .altri__box--left {
     padding: 23px 21px;
   }
@@ -1323,7 +1346,7 @@ input, textarea {
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .altri__box--right {
     padding: 23px 21px;
   }
@@ -1356,7 +1379,7 @@ input, textarea {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .altri__title {
     margin-bottom: 15px;
   }
@@ -1371,12 +1394,12 @@ input, textarea {
           justify-content: center;
   gap: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .altri__box-wrap {
     height: 238px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .altri__box-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1389,7 +1412,7 @@ input, textarea {
   line-height: 1.5;
   font-family: "Montserrat Alternates", sans-serif;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .altri__text {
     font-size: 14px;
     line-height: 1.5;
@@ -1403,7 +1426,7 @@ input, textarea {
   font-size: 19px;
   line-height: 1.5;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .altri__text-bottom {
     font-size: 14px;
     line-height: 1.5;
@@ -1415,7 +1438,7 @@ input, textarea {
   background-color: #F7F8FD;
   position: relative;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer {
     height: 145px;
   }
@@ -1423,7 +1446,7 @@ input, textarea {
 .footer__list-wrap {
   padding: 63px 0;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer__list-wrap {
     display: none;
   }
@@ -1462,27 +1485,22 @@ input, textarea {
   padding-left: 84px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer .container {
     max-width: 375px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .mobile-footer {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .mobile-footer {
     display: none;
   }
@@ -1524,12 +1542,7 @@ input, textarea {
           align-items: center;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 768px) {
-  .mobile-footer__tel {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .mobile-footer__tel {
     display: none;
   }

@@ -49,3 +49,24 @@
 .no-scroll {
     overflow: hidden;
 }
+
+.scrollbtn {
+    position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        border: 2px solid var(--accent-color);
+        outline: none;
+        background-color: transparent;
+        color: var(--title-color);
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), border 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.scrollbtn:hover {
+    background-color: var(--accent-color);
+    color: var(--btn-text-color);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}

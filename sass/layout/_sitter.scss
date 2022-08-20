@@ -8,8 +8,10 @@
 .sitter .container {
     @include desktop {
         display: flex;
-            max-width: 1200px;
-            margin: 0 auto;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
     }
     @include mobile {
         max-width: 375px;
@@ -17,9 +19,6 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-}
-
-.sitter__box--left {
 }
 
 .sitter__img {
@@ -83,7 +82,7 @@
 .sitter__picture-row {
     @include desktop {
         width: 539px;
-        margin-left: 209px;
+        margin-left: 170px;
     }
 
     @include mobile {

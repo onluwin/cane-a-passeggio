@@ -12,7 +12,7 @@
         position: relative;
         margin-bottom: 8px;
         position: fixed;
-            backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
     }
 }
 .header .container {
@@ -26,8 +26,8 @@
     @include mobile {
         display: flex;
         width: 375px;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 15px;
+        padding-left: 15px;
         margin: 0 auto;
     }
 }
@@ -89,7 +89,7 @@
     display: block;
     height: 100%;
     color: var(--primary-text-color);
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link:hover, .header__link:focus {
     color: var(--accent-color);
@@ -129,7 +129,6 @@
     border: none;
     background-color: transparent;
     z-index: 3;
-    
     @include desktop {
         display: none;
     }
@@ -152,9 +151,6 @@
     display: flex;
     align-items: center;
     fill: var(--title-color);
-    @include tablet {
-        display: none;
-    }
 }
 .mob-menu__icon--close {
     display: none;
@@ -189,9 +185,6 @@
         @include desktop {
             display: none;
         }
-        @include tablet {
-            display: none;
-        }
 }
 
 .mob-menu.is-open {
@@ -215,5 +208,3 @@
     font-style: normal;
     font-weight: 400;
 }
-
-.mob-menu__link {}

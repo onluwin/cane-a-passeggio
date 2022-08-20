@@ -41,12 +41,12 @@
     @include desktop {
         max-width: 1200px;
         margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
     }
     @include mobile {
         max-width: 375px;
         margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
     }
 }
 
@@ -54,9 +54,6 @@
 
 .mobile-footer {
     @include desktop {
-        display: none;
-    }
-    @include tablet {
         display: none;
     }
 }
@@ -79,9 +76,6 @@
 
 .mobile-footer__tel {
     @include desktop {
-        display: none;
-    }
-    @include tablet {
         display: none;
     }
     font-style: normal;
